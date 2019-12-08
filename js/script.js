@@ -34,20 +34,15 @@ let projectCard = '';
 for (var i = 0; i < workPieces.length; i++) {
     const projects = workPieces[i];
 
-    projectCard += `<div class="card col-12 ml-2 h-100 my-2" style="width: 30rem;">
-    <h5 class="card-header">${projects.title}</h5>
+    projectCard += `<div class="card col-12 ml-2 h-100 my-2" style="width: 30rem;padding: 0;">
+    <img src="${projects.image}" class="card-img-top" alt="${projects.title}">
     <div class="card-body">
-    <div class="row">
-    <img src="${projects.image}" class="card-img-top col-6" alt="${projects.title}">
-    <div class="col-6">
+    <h5 class="card-title">${projects.title}</h5>
     <p class="card-text">${projects.description}</p>
-    <a href="${projects.githubLink}" class="btn btn-dark" >Github</a>
+    <a href="${projects.githubLink}" class="btn btn-success" >View on GitHub</a>
     </div>
-
-    </div>
-
-    </div>
-    </div>`; 
+    </div>`;
+    console.log(projectCard);
 }
 
 

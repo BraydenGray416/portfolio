@@ -9,8 +9,7 @@
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem; } }
+.btn-purple {
+  background-color: #8e44ad; }
 
-.bg-grey{
-    background-color: #cdcdcd;
-} 
 /*# sourceMappingURL=style.css.map */
